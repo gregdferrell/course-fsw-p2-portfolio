@@ -93,7 +93,7 @@ img, embed, object, video {
 @media screen and (min-width:768px) {
 
     .feature-box {
-        max-width: 320px;
+        max-width: 325px;
     }
 
     .feature-list {
@@ -112,12 +112,17 @@ img, embed, object, video {
         text-align: left;
     }
 
-    .main {
-        text-align: left;
+    .feature-box {
+        max-width: 290px;
     }
 
     .header-subtitle h4 {
         text-align: right;
     }
+
+    .main {
+        text-align: left;
+    }
+
 }
 
