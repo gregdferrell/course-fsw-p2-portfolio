@@ -1,4 +1,4 @@
-/* CSS for portfolio project */
+/* Main CSS for portfolio project */
 
 /*                     */
 /* Global Styles       */
@@ -10,10 +10,6 @@
     box-sizing: border-box;
 }
 
-img, embed, object, video {
-    max-width: 100%;
-}
-
 html body {
     font-family: 'Open Sans', sans-serif;
     margin-left: auto;
@@ -21,31 +17,24 @@ html body {
     width: 90%;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
+header {
+    border-bottom: .1em solid grey;
+    margin: 1em 0 2em 0;
 }
 
-.col-3 {
-    width: 25%;
+footer {
+    border-top: .1em solid grey;
+    margin: 2em 0 2em 0;
+    text-align: center;
 }
 
-.col-6 {
-    width: 50%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-12 {
-    width: 100%;
+img, embed, object, video {
+    max-width: 100%;
 }
 
 .feature-box {
     background-color: #FAFAFA;
-    flex: initial;
-    margin: .5em;
+    margin: 1em .5em 1em;
     padding: .5em;
     text-align: center;
     word-wrap: break-word;
@@ -56,22 +45,30 @@ html body {
     max-width: 250px;
 }
 
-.footer {
-    border-top: .1em solid grey;
-    margin: 2em 0 2em 0;
+.front-image-container {
+    text-align: center;
 }
 
 .header {
-    border-bottom: .1em solid grey;
-    margin-bottom: 2em;
+    align-items: center;
 }
 
 .header-title {
     margin-top: 0;
+    text-align: right;
+}
+
+.header-subtitle h4 {
+    margin: 1em 0 1em;
+    text-align: center;
 }
 
 .logo {
-    width: 100px;
+    width: 75px;
+}
+
+.main {
+    text-align: center;
 }
 
 .text-muted {
@@ -84,49 +81,16 @@ html body {
 
 @media screen and (max-width:600px) {
 
-    .footer {
-        text-align: center;
-    }
-
     .front-image {
         display: none;
-    }
-
-    .header-left {
-        display: none;
-    }
-
-    .header-right {
-        text-align: center;
-        width: 100%;
-    }
-
-    .main {
-        text-align: center;
     }
 }
 
 /*                     */
-/* Screen > 600px      */
+/* Screen >= 768px     */
 /*                     */
 
-@media screen and (min-width:601px) {
-
-    .front-image {
-        display: inline;
-    }
-
-    .front-image-container {
-        text-align: center;
-    }
-}
-
-/*                     */
-/* Screen > 600px      */
-/* Screen <= ?px     */
-/*                     */
-
-@media screen and (min-width:601px) and (max-width:2000px) {
+@media screen and (min-width:768px) {
 
     .feature-box {
         max-width: 320px;
@@ -136,12 +100,24 @@ html body {
         display: flex;
         flex-wrap: wrap;
     }
+}
 
-    .footer {
+/*                     */
+/* Screen >= 1024px    */
+/*                     */
+
+@media screen and (min-width:1024px) {
+
+    footer {
         text-align: left;
     }
 
-    .header-right {
+    .main {
+        text-align: left;
+    }
+
+    .header-subtitle h4 {
         text-align: right;
     }
 }
+
