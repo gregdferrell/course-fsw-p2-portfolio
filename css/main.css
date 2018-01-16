@@ -1,0 +1,147 @@
+/* CSS for portfolio project */
+
+/*                     */
+/* Global Styles       */
+/*                     */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img, embed, object, video {
+    max-width: 100%;
+}
+
+html body {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.feature-box {
+    background-color: #FAFAFA;
+    flex: initial;
+    margin: .5em;
+    padding: .5em;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.feature-image {
+    max-height: 125px;
+    max-width: 250px;
+}
+
+.footer {
+    border-top: .1em solid grey;
+    margin: 2em 0 2em 0;
+}
+
+.header {
+    border-bottom: .1em solid grey;
+    margin-bottom: 2em;
+}
+
+.header-title {
+    margin-top: 0;
+}
+
+.logo {
+    width: 100px;
+}
+
+.text-muted {
+    color: #868e96 !important;
+}
+
+/*                     */
+/* Screen <= 600px     */
+/*                     */
+
+@media screen and (max-width:600px) {
+
+    .footer {
+        text-align: center;
+    }
+
+    .front-image {
+        display: none;
+    }
+
+    .header-left {
+        display: none;
+    }
+
+    .header-right {
+        text-align: center;
+        width: 100%;
+    }
+
+    .main {
+        text-align: center;
+    }
+}
+
+/*                     */
+/* Screen > 600px      */
+/*                     */
+
+@media screen and (min-width:601px) {
+
+    .front-image {
+        display: inline;
+    }
+
+    .front-image-container {
+        text-align: center;
+    }
+}
+
+/*                     */
+/* Screen > 600px      */
+/* Screen <= ?px     */
+/*                     */
+
+@media screen and (min-width:601px) and (max-width:2000px) {
+
+    .feature-box {
+        max-width: 320px;
+    }
+
+    .feature-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        text-align: left;
+    }
+
+    .header-right {
+        text-align: right;
+    }
+}
