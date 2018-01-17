@@ -10,39 +10,40 @@
     box-sizing: border-box;
 }
 
-html body {
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
+body{
     font-family: 'Open Sans', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 90%;
 }
 
-header {
-    border-bottom: .1em solid grey;
-    margin: 1em 0 2em 0;
-}
-
-footer {
-    border-top: .1em solid grey;
+#footer-main {
+    border-top: 0.1em solid grey;
     margin: 2em 0 2em 0;
     text-align: center;
 }
 
-img, embed, object, video {
-    max-width: 100%;
+#header-main {
+    border-bottom: 0.1em solid grey;
+    margin: 1em 0 2em 0;
 }
 
 .feature-box {
     background-color: #FAFAFA;
-    margin: 1em .5em 1em;
-    padding: .5em;
+    margin: 1em 0.5em 1em;
+    padding: 0.5em;
     text-align: center;
     word-wrap: break-word;
 }
 
-.feature-image {
-    max-height: 125px;
-    max-width: 250px;
+.footer-icon-link {
+    margin: 0 0.5em 0;
 }
 
 .front-image-container {
@@ -53,12 +54,11 @@ img, embed, object, video {
     align-items: center;
 }
 
-.header-title {
-    margin-top: 0;
+.header-title-section {
     text-align: right;
 }
 
-.header-subtitle h4 {
+.header-subtitle {
     margin: 1em 0 1em;
     text-align: center;
 }
@@ -72,18 +72,7 @@ img, embed, object, video {
 }
 
 .text-muted {
-    color: #868e96 !important;
-}
-
-/*                     */
-/* Screen <= 600px     */
-/*                     */
-
-@media screen and (max-width:600px) {
-
-    .front-image {
-        display: none;
-    }
+    color: #868e96;
 }
 
 /*                     */
@@ -93,7 +82,7 @@ img, embed, object, video {
 @media screen and (min-width:768px) {
 
     .feature-box {
-        max-width: 325px;
+        width: 31%;
     }
 
     .feature-list {
@@ -108,20 +97,19 @@ img, embed, object, video {
 
 @media screen and (min-width:1024px) {
 
-    footer {
+    #footer-main {
         text-align: left;
     }
 
     .feature-box {
-        max-width: 290px;
+        width: 23%;
     }
 
-    .header-subtitle h4 {
+    .header-subtitle {
         text-align: right;
     }
 
     .main {
         text-align: left;
     }
-
 }
