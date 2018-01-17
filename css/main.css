@@ -1,13 +1,19 @@
 /* Main CSS for portfolio project */
 
-/*                     */
-/* Global Styles       */
-/*                     */
+/*               */
+/* Global Styles */
+/*               */
 
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    width: 90%;
 }
 
 img,
@@ -17,19 +23,13 @@ video {
     max-width: 100%;
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
-    margin: 0 auto;
-    width: 90%;
-}
-
 #footer-main {
     border-top: 0.1em solid grey;
     margin: 2em 0 2em 0;
     text-align: center;
 }
 
-#header-main {
+#header-top {
     border-bottom: 0.1em solid grey;
     margin: 1em 0 2em 0;
 }
@@ -49,40 +49,23 @@ body{
     margin: 0 0.5em 0;
 }
 
-.front-image-container {
-    text-align: center;
-}
-
-.header {
-    align-items: center;
-}
-
-.header-title-section {
-    text-align: right;
-}
-
 .header-subtitle {
     margin: 1em 0 1em;
-    text-align: center;
 }
 
 .logo {
     width: 75px;
 }
 
-.main {
-    text-align: center;
-}
-
-.text-muted {
-    color: #868e96;
-}
-
-/*                     */
-/* Screen >= 768px     */
-/*                     */
+/*                 */
+/* Screen >= 768px */
+/*                 */
 
 @media screen and (min-width:768px) {
+
+    body {
+        width: 85%;
+    }
 
     .feature-box {
         width: 27%;
@@ -95,25 +78,13 @@ body{
     }
 }
 
-/*                     */
-/* Screen >= 1024px    */
-/*                     */
+/*                  */
+/* Screen >= 1024px */
+/*                  */
 
 @media screen and (min-width:1024px) {
 
-    #footer-main {
-        text-align: left;
-    }
-
     .feature-box {
         width: 20%;
-    }
-
-    .header-subtitle {
-        text-align: right;
-    }
-
-    .main {
-        text-align: left;
     }
 }

@@ -1,6 +1,11 @@
-/* CSS that could theoretically be used across projects for a home grown grid layout. */
+/* CSS that could theoretically be used across projects for layout out and styling. */
+
+/*             */
+/* Flex Layout */
+/*             */
 
 .row {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
 }
@@ -51,4 +56,24 @@
 
 .col-12 {
     width: 100%;
+}
+
+/*               */
+/* Text Altering */
+/*               */
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-muted {
+    color: #868e96;
 }
