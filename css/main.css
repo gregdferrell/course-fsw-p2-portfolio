@@ -36,8 +36,11 @@ body{
 
 .feature-box {
     background-color: #FAFAFA;
-    margin: 1em 0.5em 1em;
-    padding: 0.5em;
+    -moz-box-shadow: 2px 2px 2px 4px #ccc;
+    -webkit-box-shadow: 2px 2px 2px 4px #ccc;
+    box-shadow: 2px 2px 2px 4px #ccc;
+    margin: 1em 1em 2em;
+    padding: 1em;
     text-align: center;
     word-wrap: break-word;
 }
@@ -82,12 +85,13 @@ body{
 @media screen and (min-width:768px) {
 
     .feature-box {
-        width: 31%;
+        width: 27%;
     }
 
     .feature-list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -102,7 +106,7 @@ body{
     }
 
     .feature-box {
-        width: 23%;
+        width: 20%;
     }
 
     .header-subtitle {
