@@ -1,4 +1,4 @@
-# Udacity Full Stack Web Developer Project 3: Project Portfolio
+# Udacity Full Stack Web Developer Project 2: Project Portfolio
 The portfolio website is the second project in the Udacity Full Stack Web Developer nano-degree.
 
 It is a responsive website that shows a portfolio of projects created for the nano-degree.
